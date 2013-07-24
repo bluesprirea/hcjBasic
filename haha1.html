@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	
+	<style type='text/css'>
+
+		*{ margin:0; padding:0;}
+		ul,li{list-style:none;}
+		body{ color:#FFF; background-image: url("http://wallpapersus.com/wp-content/uploads/2012/10/Black-Background-Collapsar.jpg");
+				background-position: 50% 50%;
+			background-repeat:  no-repeat;  font-family: sans-serif;}
+		#wrapper{ text-align:left; width:1200px; margin:0 auto; }
+		#f{
+			position = static;
+			left:50; top:50; width:100;
+		}
+		header, footer, aside, section {
+		display:block; 
+		}
+		header, footer, aside, section{
+		margin-top:10px;
+		}
+		header, aside, section, footer {
+		background-color: #000;
+		}
+		header, footer{
+		width:100%;
+		}
+		header{
+			text-align: center;
+		}
+		aside{
+		width:30%;
+		float:left;
+		}
+		section {
+		margin-bottom:10px;
+		width:70%;
+		float:right;
+		}
+		article {
+		width:90%;
+		margin:20px;
+		background-color: #999;
+		}
+		footer {
+		clear:both;
+		text-align: center;
+		}
+
+	</style>
+	<script>
+			function disp(a){
+				if(a)
+					f.style.visibility="hidden"
+				else
+					f.style.visibility='visible'
+			}
+	</script>
+</head>
+<body>
+
+	<div id="wrapper">
+		<header id="pageHeader">
+			<h1> HTML 기본과제용 그림판 </h1>
+			<p> 그림을 그리시쵸. </p>
+		</header>
+		<div>
+			<aside id"pageAside"> 
+				<h1 align='center'> Draw You Want. </h1> <br>
+				<table border='1' bordercolor='white' id='f' width='300' align='center'>
+					<tr>
+						<th> Color You want </th> 
+						<th> Pixel You want </th>
+					<tr align='center'>
+						<td> <form>
+					<input type='button' value='red' style="height: 15px; width:100px; align:center"> <br>
+					<input type='button' value='blue' style="height: 15px; width:100px; align:center"> <br>
+					<input type='button' value='black' style="height: 15px; width:100px; align:center"> <br>
+					<input type='button' value='erase' style="height: 15px; width:100px; align:center"> <br> </td> </form>
+						<td><form>
+					<input type='button' value='5px' style="height: 15px; width:100px; align:center"> <br>
+					<input type='button' value='10px' style="height: 15px; width:100px; align:center"> <br>
+					<input type='button' value='15px' style="height: 15px; width:100px; align:center"> <br>
+					<input type='button' value='20px' style="height: 15px; width:100px; align:center"> <br> </td>
+					<tr>
+						<th> Button You Want </th>
+						<th> Figure You Want </th>
+					<tr align='center'>
+						<td> <form>
+					<input type='button' value='ribbon' style="height: 15px; width:100px; align:center"> <br>
+					<input type='button' value='star' style="height: 15px; width:100px; align:center"> <br>
+					<input type='button' value='flower' style="height: 15px; width:100px; align:center"> <br>
+					<input type='button' value='ballon' style="height: 15px; width:100px; align:center"> <br> </td> </form>
+						<td> <form>
+					<input type='button' value='circle' style="height: 15px; width:100px; align:center"> <br>
+					<input type='button' value='triangle' style="height: 15px; width:100px; align:center"> <br>
+					<input type='button' value='quadrangle' style="height: 15px; width:100px; align:center"> <br>
+					<input type='button' value='pentagon' style="height: 15px; width:100px; align:center"> <br> </td> 
+
+
+					
+				</form> </table>
+
+			</aside>
+
+			<section id="pageSection"> 
+				<canvas id="myCanvas" width="700" height="500"
+				 style="border:1px solid #000000;">
+ 				</canvas> 
+ 				<script>
+				 var c=document.getElementById("myCanvas");
+				 var ctx=c.getContext("2d");
+				 ctx.fillStyle="#FFF";
+				 ctx.fillRect(0,0,800,500);
+
+				 </script> 
+			</section>
+		</div>
+		<footer id="pageFooter"> 131034 변치호 NHN NEXT </footer>
+	</div>
+</body>
+</html>
